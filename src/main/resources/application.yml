@@ -1,0 +1,28 @@
+#SPRING CONFIGURATION
+spring:
+  datasource:
+    url: jdbc::postgresql://localhost:5432/Web_Tour
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: sergeychueshov
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+#SERVER CONFIGURATION
+server:
+  port: 8081
+
+#SERVICE CONFIGURATION
+services:
+  mail:
+    email:darida10ap@mail.ru
+    userName:Roma
+    password:12345678
+  registration:
+    companyName:AnexTour, La-Galiera, GlobalTour
+    officialStateRegistrationNumber:https//:usr.by
+
+
+
